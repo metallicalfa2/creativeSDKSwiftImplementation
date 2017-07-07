@@ -19,7 +19,7 @@ class ViewController: UIViewController,AdobeUXImageEditorViewControllerDelegate 
 	fileprivate let kCreativeSDKRedirectURLString = "ams+4572f58a319441c5b5ab4cc2ad230c5b22d3e5d5://adobeid/6dadb592a209442f9db44920ca45f86a"
 	
 	@IBAction func openEditor(_ sender: Any) {
-		self.photoEditorStart(image: #imageLiteral(resourceName: "img"))
+		self.photoEditorStart(image: #imageLiteral(resourceName: "ballons"))
 
 	}
 	override func viewDidLoad() {
@@ -40,23 +40,7 @@ class ViewController: UIViewController,AdobeUXImageEditorViewControllerDelegate 
 				kAdobeImageEditorEnhance,        /* Enhance */
 				kAdobeImageEditorEffects,        /* Effects */
 				kAdobeImageEditorStickers,       /* Stickers */
-				kAdobeImageEditorOrientation,    /* Orientation */
-				kAdobeImageEditorCrop,           /* Crop */
-				kAdobeImageEditorColorAdjust,    /* Color */
-				kAdobeImageEditorLightingAdjust, /* Lighting */
-				kAdobeImageEditorSharpness,      /* Sharpness */
-				kAdobeImageEditorDraw,           /* Draw */
-				kAdobeImageEditorText,           /* Text */
-				kAdobeImageEditorRedeye,         /* Redeye */
-				kAdobeImageEditorWhiten,         /* Whiten */
-				kAdobeImageEditorBlemish,        /* Blemish */
-				kAdobeImageEditorBlur,           /* Blur */
-				kAdobeImageEditorMeme,           /* Meme */
-				kAdobeImageEditorFrames,         /* Frames */
-				kAdobeImageEditorFocus,          /* TiltShift */
-				kAdobeImageEditorSplash,         /* ColorSplash */
-				kAdobeImageEditorOverlay,        /* Overlay */
-				kAdobeImageEditorVignette        /* Vignette */
+				kAdobeImageEditorOrientation,  
 				])
 			
 			let adobeViewCtr = AdobeUXImageEditorViewController(image: image)
