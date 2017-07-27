@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import PromiseKit
-
 
 class NetworkController{
 	static let loginURL = "https://13.126.4.227:3000/login"
@@ -19,6 +17,7 @@ class NetworkController{
 		let session = URLSession(configuration: .ephemeral, delegate: nil, delegateQueue: OperationQueue.main)
 		let url = URL(string: urlString)!
 		let task = session.dataTask(with: url, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+			print(data)
 			guard let data = data else {
 				completion(nil)
 				return
@@ -28,6 +27,7 @@ class NetworkController{
 				completion(nil)
 				return
 			}
+			print(json)
 			let result: [Any]
 			switch urlString {
 			case NetworkController.loginURL:
@@ -43,6 +43,6 @@ class NetworkController{
 	}
 	
 	func test(){
-	
+		//
 	}
 }

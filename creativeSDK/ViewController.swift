@@ -19,12 +19,12 @@ class ViewController: UIViewController,AdobeUXImageEditorViewControllerDelegate 
 	fileprivate let kCreativeSDKRedirectURLString = "ams+4572f58a319441c5b5ab4cc2ad230c5b22d3e5d5://adobeid/6dadb592a209442f9db44920ca45f86a"
 	
 	@IBAction func openEditor(_ sender: Any) {
-		self.photoEditorStart(image: #imageLiteral(resourceName: "ballons"))
-
+		self.photoEditorStart(image: #imageLiteral(resourceName: "test"))
+		
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		let test = NetworkController()
 		AdobeUXAuthManager.shared().setAuthenticationParametersWithClientID(kCreativeSDKClientId, withClientSecret: kCreativeSDKClientSecret)
 		AdobeUXAuthManager.shared().redirectURL = NSURL(string: kCreativeSDKRedirectURLString)! as URL!
 		
@@ -37,10 +37,11 @@ class ViewController: UIViewController,AdobeUXImageEditorViewControllerDelegate 
 	func photoEditorStart(image: UIImage!) {
 		DispatchQueue.main.async {
 			AdobeImageEditorCustomization.setToolOrder([
-				kAdobeImageEditorEnhance,        /* Enhance */
-				kAdobeImageEditorEffects,        /* Effects */
-				kAdobeImageEditorStickers,       /* Stickers */
-				kAdobeImageEditorOrientation,  
+				kAdobeImageEditorCrop,        /* Enhance */
+				kAdobeImageEditorOrientation,
+				kAdobeImageEditorEffects,
+				kAdobeImageEditorColorAdjust,    /* Effects */
+				kAdobeImageEditorSharpness
 				])
 			
 			let adobeViewCtr = AdobeUXImageEditorViewController(image: image)

@@ -23,7 +23,6 @@
 		5172899A1F0D0CAD00ACD31C /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 517289991F0D0CAD00ACD31C /* AdobeCreativeSDKCoreResources.bundle */; };
 		5172899C1F0D0CBC00ACD31C /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5172899B1F0D0CBC00ACD31C /* AdobeCreativeSDKImageResources.bundle */; };
 		519B2E731F0E759100E0D2AD /* networkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519B2E721F0E759100E0D2AD /* networkControl.swift */; };
-		519B2E761F0E798100E0D2AD /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519B2E751F0E798100E0D2AD /* PromiseKit.framework */; };
 		51C409B31F0E269600704A5D /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C409B21F0E269600704A5D /* AdobeCreativeSDKImage.framework */; };
 		51C409B41F0E26D400704A5D /* AdobeCreativeSDKImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51C409B21F0E269600704A5D /* AdobeCreativeSDKImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78DB7869FD660D72544ECB7F /* Pods_creativeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1626AC3E54702064365DAA7D /* Pods_creativeSDK.framework */; };
@@ -74,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519B2E761F0E798100E0D2AD /* PromiseKit.framework in Frameworks */,
 				517289981F0D0AD300ACD31C /* SystemConfiguration.framework in Frameworks */,
 				517289961F0D0ACA00ACD31C /* MobileCoreServices.framework in Frameworks */,
 				517289941F0D0AC000ACD31C /* libz.tbd in Frameworks */,
