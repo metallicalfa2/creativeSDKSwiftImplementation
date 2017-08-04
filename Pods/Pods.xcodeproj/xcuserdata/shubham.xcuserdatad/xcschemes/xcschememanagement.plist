@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Fusuma.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-creativeSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>55FFB65730B596E82AC2E725FF5B577C</key>
+		<key>30D9B57937811E6294E46ECC3D91099B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F9E8BC1D38CE457B4AD57EB2858AED1</key>
+		<key>3E0D8640A124012AB6F0A9F775A38285</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A55342072A48BEF474AA0939969B4AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

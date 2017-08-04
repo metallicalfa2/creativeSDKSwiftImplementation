@@ -7,4 +7,5 @@ target 'creativeSDK' do
 
   # Pods for creativeSDK
   pod "PromiseKit"
+  pod 'Fusuma'
 end
